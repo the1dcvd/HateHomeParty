@@ -1,0 +1,567 @@
+/*@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');*/
+
+@import url('IntroDemo-BlackCAPSшрифт.otf');
+
+@font-face {
+  font-family: Intro_Demo_Black_CAPS;
+  src: url(IntroDemo-BlackCAPSшрифт.otf) format(opentype);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+html, body {
+  font-family: Intro_Demo_Black_CAPS;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFF;
+  font-size: 16px;
+
+  scroll-behavior: smooth;
+}
+
+img{
+    width: 100%;
+}
+
+main {
+    background: #FDADE2;
+}
+
+/*##################### MENUS ###################*/
+
+.topmenu--container {
+  display: flex;
+  align-content: center;
+  width: 100%;
+  padding-left: 20px;
+  background: rgba(0,0,0,0.8);
+  position: fixed;
+  z-index: 1;
+  transition: all 170ms ease;
+}
+
+.topmenu--container:hover {
+  background: #000;
+}
+
+.topmenu--container:active {
+  background: #000;
+}
+
+.topmenu--container img {
+  width: 5vw;
+}
+
+nav.topmenu ul {
+  width: 40vw;
+  padding-left: 26px;
+  margin-left: 50vw;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding-top: 26px;
+}
+
+nav.topmenu ul li{
+  list-style: none;
+  
+}
+
+nav.topmenu ul li a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+#menuToggle{
+
+  display: none;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #FFF;
+  
+  transition: color 0.3s ease;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; 
+  z-index: 2;
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #FFF;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #FFF;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  max-width: 400px;
+  width: 100vw;
+  max-height: 100vh;
+  margin: -100px 0 0 -150px;
+  padding: 50px;
+  padding-top: 125px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  background: rgba(0,0,0,0.8);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menu li label
+{
+  cursor: pointer;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+/*########################################*/
+
+#mainpage {
+  min-height: 100vh;
+}
+
+.hate--logo {
+  display: block;
+  margin: auto;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  width: 30%;
+}
+
+.dude--logo {
+  display: none;
+  margin: auto;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  width: 30%;
+}
+
+.hero h2 {
+  text-align: center;
+  font-size: 32px;
+  padding-bottom: 26px;
+}
+
+.hero--btn {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+button.page_switch {
+  color: #ffffff;
+  font-size: 32px;
+  padding: 10px 15px;
+  background: #7DD2D9;
+  border: 0;
+  border-radius: 50px;
+  transition: all 200ms ease;
+}
+
+button.page_switch:hover {
+  scale: 0.9;
+}
+
+button.page_switch:active {
+  scale: 0.85;
+}
+
+#mainpage .switchpage {
+    display: flex;
+    justify-content: center;
+}
+
+#mainpage .switchpage a {
+    color: #FFF;
+    font-size: 1.5vw;
+}
+
+#mainpage .switchpage .btn {
+    background: #7DD2D9;
+    border-radius: 50px;
+    padding: 9px 17px;
+    margin: 20px;
+    width: 15%;
+    transition: all 500ms ease;
+}
+
+#mainpage .switchpage .btn:hover {
+    transform: scale(1.1);
+}
+
+#mainpage .switchpage .btn:active {
+    transform: scale(0.7);
+}
+
+#mainpage .hyperlink {
+  display: block;
+  text-align: center;
+}
+
+#mainpage .hyperlink a {
+  color: #FFF;
+  font-size: 26px;
+  background: rgba(0,0,0,0.6);
+  margin-top: 12px;
+  padding: 12px;
+  transition: all 500ms ease;
+}
+
+#mainpage .hyperlink a:hover{
+  background: rgba(0,0,0,1);
+}
+
+#mainpage .hyperlink a:active{
+  background: rgba(0,0,0,1);
+}
+
+/* MERCH */
+
+#merch {
+  padding-bottom: 40px;
+  
+}
+
+#merch .hyperlink {
+  display: block;
+  text-align: center;
+}
+
+#merch .hyperlink a {
+  color: #FFF;
+  font-size: 26px;
+  background: rgba(0,0,0,0.6);
+  margin-top: 12px;
+  padding: 12px;
+  transition: all 500ms ease;
+}
+
+#merch .hyperlink a:hover{
+  background: rgba(0,0,0,1);
+}
+
+#merch .hyperlink a:active{
+  background: rgba(0,0,0,1);
+}
+
+.slideshow-container {
+  width: 50%;
+  background: #FFF;
+  position: relative;
+  margin: auto;
+  padding-bottom: 5vh;
+  box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.6);
+}
+
+.mySlides {
+  display: none;
+  align-items: center;
+}
+
+.mySlides img {
+  width: 90%;
+  margin: 5%;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #FFF;
+  background-color: #232323;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 1s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/*ABOUT*/
+
+#about {
+  background: url(IMG/Untitled\(4\).png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#about article {
+  display: block;
+  margin-left: 20%;
+  width: 60%;
+  background: rgba(0,0,0,0.6);
+  height: 100vh;
+}
+
+#about article h2 {
+  font-size: 26px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+#about article p {
+  width: 40%;
+  text-align: center;
+  margin: 0 30%;
+  padding-bottom: 40px;
+  font-size: 20px;
+  line-height: 40px;
+}
+/*FOOTER*/
+
+footer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background: #000;
+  text-align: center;
+}
+
+footer img {
+  display: block;
+  width: 10%;
+  align-self: center;
+  padding-bottom: 26px;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer h3 {
+  font-size: 26px;
+  font-weight: bold;
+  padding-top: 26px;
+  text-align: center;
+}
+
+footer a {
+  color: #FFF;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.socials--hate {
+  align-self: center;
+}
+
+.socials--dude {
+  align-self: center;
+  padding-bottom: 26px;
+}
+
+@keyframes fade {
+  from {opacity: .8}
+  to {opacity: 1}
+}
+
+@media (max-width: 1440px) {
+
+  nav.topmenu ul {
+    padding-top: 16px;
+  }
+
+  footer {
+    flex: 1;
+  }
+
+}
+
+@media (max-width: 1100px)
+{
+  .topmenu--container {
+    display: none;
+  }
+
+  #menuToggle{
+  display: block;
+  }
+
+  .hate--logo {
+  width: 40%;
+  }
+
+  .dude--logo {
+  width: 40%;
+  }
+
+  .slideshow-container {
+    width: 90%;
+  }
+
+  #about article {
+    width: 80%;
+    margin-left: 10%;
+    height: auto;
+  }
+
+  #about article p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 900px) {
+   .hate--logo {
+  width: 60%;
+  }
+
+  .dude--logo {
+  width: 60%;
+  }
+  
+  #about {
+  background: url(IMG/Untitled\(5\).png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  }
+
+  #about article p {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+
+@media (max-width: 648px)
+{
+  .hate--logo {
+    padding: 25% 0;
+  }
+
+  .dude--logo {
+    padding: 25% 0;
+  }
+
+  #about article p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  footer h3 {
+    font-size: 18px;
+  }
+
+  footer a {
+    font-size: 12px;
+  }
+
+  footer .container2 img {
+  width: 60%;
+}
+
+}
