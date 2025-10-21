@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <meta property="og:image" content="Pink logo.png" />
+    <meta property="og:image" content="IMG/Pink logo.png" />
     <meta property="og:title" content="Hate Home Party" />
     <meta property="og:description" content="Концерты, кино и самые ламповые вечеринки в Москве" />
     <meta name="theme-color" content="#FDADE2" />
@@ -24,7 +24,7 @@
                 <!-- NAV FOR WIDESCREEN-->
 
                 <div class="topmenu--container">
-                    <img src="IMG/White HHP Logo.png" alt="LOGO">
+                    <img class="logo" src="IMG/White HHP Logo.png" alt="LOGO">
                     <nav class="topmenu">
                         
                             <ul>
@@ -39,7 +39,7 @@
 
                 <!--NAV FOR MOBILE-->
                 <nav role="navigation">
-            <div id="menuToggle">
+                <div id="menuToggle">
                 
                 <input type="checkbox" id="menuCheckbox" />
                 
@@ -72,30 +72,36 @@
                     </a>
                 </li>
 
+                <img class="logo" src="IMG/White HHP Logo.png" style="width: 60px; display: block; margin-left: 40px;" alt="LOGO">
+
                 </ul>
             </div>
             </nav>
-        </header>
+            
+        </header>    
+
         <section id="mainpage">
 
             <div class="hero">
 
                 <div class="hate--logo">
-                    <img src="IMG/White HHP Logo.png" alt="LOGO_HATEHOMEPARTY">
+                    <img src="IMG/HHP HALLOWEEN.png" alt="LOGO_HATEHOMEPARTY">
                 </div>
 
                 <div class="dude--logo">
                     <img src="IMG/DUDECORE_LOGO.png" alt="LOGO_DUDEITSCORE">
                 </div>
 
+                <a class="temp-link" href="https://t.me/hatehomeparty">Встреча</a>
+
                 <h2>Сами вы фестиваль</h2>
 
                 <div class="hero--btn">
                     <button class="page_switch">Click me!</button>
                 </div>
-
-                
             </div>
+
+            <a href="Game/game.html"><img src="Game/img/cactus2.png" alt="entry" class="entryPoint" style="width: 80px; padding: 12px;"></a>
 
         </section>
 
@@ -158,13 +164,13 @@
                     </ul>
                 </div>
 
-                <img src="IMG/White HHP Logo.png" alt="HHP-logo">
+                <a href="#mainpage"><img class="logo" src="IMG/White HHP Logo.png" alt="HHP-logo"></a>
         </footer>
     </main>
 
     <script src="script.js"></script>
+    <script src="Game/dino.js"></script>
 
 </body>
-
 
 </html>

@@ -215,7 +215,6 @@ nav.topmenu ul li a {
   display: block;
   margin: auto;
   padding-top: 10%;
-  padding-bottom: 5%;
   width: 30%;
 }
 
@@ -223,13 +222,19 @@ nav.topmenu ul li a {
   display: none;
   margin: auto;
   padding-top: 10%;
-  padding-bottom: 5%;
   width: 30%;
+}
+
+#mainpage .temp-link {
+  display: block;
+  text-align: center;
+  font-size: 26px;
 }
 
 .hero h2 {
   text-align: center;
   font-size: 32px;
+  padding-top: 32px;
   padding-bottom: 26px;
 }
 
@@ -431,7 +436,7 @@ footer {
 footer img {
   display: block;
   width: 10%;
-  align-self: center;
+  margin: auto;
   padding-bottom: 26px;
 }
 
@@ -541,10 +546,12 @@ footer a {
 {
   .hate--logo {
     padding: 25% 0;
+    width: 100%;
   }
 
   .dude--logo {
     padding: 25% 0;
+    width: 100%;
   }
 
   #about article p {
