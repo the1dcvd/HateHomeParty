@@ -225,8 +225,9 @@ nav.topmenu ul li a {
   width: 30%;
 }
 
-#mainpage .temp-link {
+#mainpage .temp-link a{
   display: block;
+  margin: auto;
   text-align: center;
   font-size: 26px;
 }
@@ -570,5 +571,6 @@ footer a {
   footer .container2 img {
   width: 60%;
 }
+
 
 }
