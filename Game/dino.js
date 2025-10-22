@@ -107,6 +107,11 @@ function update() {
     context.font="20px courier";
     score++;
     context.fillText(score, 5, 20);
+
+    if(score == 10000){
+        gameOver = true;
+        document.querySelector('.winMsg').style.display = 'block';
+    }
 }
 
 function moveDino(e) {
@@ -163,4 +168,5 @@ function detectCollision(a, b) {
            a.x + a.width > b.x &&   //a's top right corner passes b's top left corner
            a.y < b.y + b.height &&  //a's top left corner doesn't reach b's bottom left corner
            a.y + a.height > b.y;    //a's bottom left corner passes b's top left corner
+
 }
