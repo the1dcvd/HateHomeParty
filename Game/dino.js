@@ -108,7 +108,7 @@ function update() {
     score++;
     context.fillText(score, 5, 20);
 
-    if(score == 5000){
+    if(score == 2025){
         gameOver = true;
         document.querySelector('.winMsg').style.display = 'block';
     }
@@ -170,4 +170,5 @@ function detectCollision(a, b) {
            a.y + a.height > b.y;    //a's bottom left corner passes b's top left corner
 
 }
+
 
