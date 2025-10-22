@@ -1,8 +1,7 @@
-
 //board
 let board;
-let boardWidth = 750;
-let boardHeight = 250;
+let boardWidth = 500;
+let boardHeight = 300;
 let context;
 
 //dino
@@ -22,11 +21,11 @@ let dino = {
 //cactus
 let cactusArray = [];
 
-let cactus1Width = 34;
-let cactus2Width = 69;
-let cactus3Width = 102;
+let cactus1Width = 28;
+let cactus2Width = 44;
+let cactus3Width = 80;
 
-let cactusHeight = 70;
+let cactusHeight = 40;
 let cactusX = 700;
 let cactusY = boardHeight - cactusHeight;
 
@@ -35,7 +34,7 @@ let cactus2Img;
 let cactus3Img;
 
 //physics
-let velocityX = -8; //cactus moving left speed
+let velocityX = -5; //cactus moving left speed
 let velocityY = 0;
 let gravity = .4;
 
@@ -71,6 +70,9 @@ window.onload = function() {
     requestAnimationFrame(update);
     setInterval(placeCactus, 1000); //1000 milliseconds = 1 second
     document.addEventListener("keydown", moveDino);
+
+    let tapReg = document.querySelector('body');
+    tapReg.addEventListener('click', e => {velocityY = -10;})
 }
 
 function update() {
@@ -112,12 +114,9 @@ function moveDino(e) {
         return;
     }
 
-    if ((e.code == "Space" || e.code == "0") && dino.y == dinoY) {
+    if ((e.key == " " || e.code == "Space") && dino.y == dinoY) {
         //jump
         velocityY = -10;
-    }
-    else if (e.code == "ArrowDown" && dino.y == dinoY) {
-        //duck
     }
 
 }
