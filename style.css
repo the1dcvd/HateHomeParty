@@ -40,6 +40,7 @@ main {
   display: flex;
   align-content: center;
   width: 100%;
+  height: 88px;
   padding-left: 20px;
   background: rgba(0,0,0,0.8);
   position: fixed;
@@ -56,7 +57,7 @@ main {
 }
 
 .topmenu--container img {
-  width: 5vw;
+  width: 88px;
 }
 
 nav.topmenu ul {
@@ -64,7 +65,7 @@ nav.topmenu ul {
   padding-left: 26px;
   margin-left: 30vw;
   display: flex;
-  align-content: center;
+  align-content:flex-end;
   justify-content: space-between;
   padding-top: 26px;
 }
@@ -109,7 +110,7 @@ nav.topmenu ul li a {
   width: 40px;
   height: 32px;
   position: absolute;
-  top: -7px;
+  top: -37px;
   left: -5px;
   
   cursor: pointer;
@@ -123,10 +124,12 @@ nav.topmenu ul li a {
 #menuToggle span
 {
   display: block;
-  width: 33px;
+  width: 40px;
   height: 4px;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   position: relative;
+
+  top: -25px;
   
   background: #FFF;
   border-radius: 3px;
@@ -481,7 +484,7 @@ footer a {
 
 @media (max-width: 1100px)
 {
-  .topmenu--container {
+  nav.topmenu ul {
     display: none;
   }
 
@@ -513,6 +516,7 @@ footer a {
   }
 }
 
+
 @media (max-width: 900px) {
    .hate--logo {
   width: 60%;
@@ -538,6 +542,14 @@ footer a {
 
 @media (max-width: 648px)
 {
+
+  .topmenu--container {
+    height: 60px;
+  }
+  .topmenu--container img {
+    width: 60px;
+  }
+  
   .hate--logo {
     padding: 25% 0;
     width: 100%;
@@ -564,6 +576,5 @@ footer a {
   footer .container2 img {
   width: 60%;
 }
-
 
 }
