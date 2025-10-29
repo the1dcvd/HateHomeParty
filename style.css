@@ -60,9 +60,9 @@ main {
 }
 
 nav.topmenu ul {
-  width: 40vw;
+  width: 60vw;
   padding-left: 26px;
-  margin-left: 50vw;
+  margin-left: 30vw;
   display: flex;
   align-content: center;
   justify-content: space-between;
@@ -564,5 +564,6 @@ footer a {
   footer .container2 img {
   width: 60%;
 }
+
 
 }
