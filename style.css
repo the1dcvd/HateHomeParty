@@ -238,7 +238,6 @@ nav.topmenu ul li a {
 .hero--btn {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
 }
 
 button.page_switch {
@@ -257,6 +256,10 @@ button.page_switch:hover {
 
 button.page_switch:active {
   scale: 0.85;
+}
+
+#mainpage {
+  padding-bottom: 40px;
 }
 
 #mainpage .switchpage {
