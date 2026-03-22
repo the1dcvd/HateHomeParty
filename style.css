@@ -212,6 +212,7 @@ nav.topmenu ul li a {
 
 #mainpage {
   min-height: 100vh;
+  display: none;
 }
 
 .hate--logo {
@@ -311,11 +312,101 @@ button.page_switch:active {
   background: rgba(0,0,0,1);
 }
 
+/*EVENT*/
+
+#event {
+  background: url(IMG/27.03/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#event article {
+  min-height: 100vh;
+  padding: 20vh;
+  background: rgba(0,0,0,0.6);
+}
+
+#event article p {
+  padding: 2vw;
+  font-size: 3vh;
+}
+
+#event article .event-pics {
+  width: 80%;
+  position: relative;
+  margin: auto;
+}
+
+#event article .eventSlides {
+  display: none;
+  align-items: center;
+}
+
+#event article .eventSlides img {
+  width: 100%;
+   box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.6);
+}
+
+#event article .fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+#event article .prev1, .next1 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #000;
+  background-color: #232323;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 1s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+#event article .next1 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+#event article .prev1:hover, .next1:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+#event article .hyperlink {
+  display: block;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+#event article .hyperlink a {
+  color: #FFF;
+  font-size: 6vh;
+  background: rgba(0,0,0,0.6);
+  margin-top: 12px;
+  padding: 12px;
+  transition: all 500ms ease;
+}
+
+#event article .hyperlink a:hover{
+  background: rgba(0,0,0,1);
+}
+
+#event article .hyperlink a:active{
+  background: rgba(0,0,0,1);
+}
+
 /* MERCH */
 
 #merch {
   padding-bottom: 40px;
-  
+  padding-top: 20px;
 }
 
 #merch .hyperlink {
@@ -561,6 +652,11 @@ footer a {
   .dude--logo {
     padding: 25% 0;
     width: 100%;
+  }
+
+  #event article {
+    padding:0%;
+    padding-top: 8vh;
   }
 
   #about article p {

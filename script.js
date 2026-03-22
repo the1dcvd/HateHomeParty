@@ -74,4 +74,41 @@ btnPrev.addEventListener('click', b => {  //previous button
     }
 })
 
-///////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////// FOR EVENT SECTION DA KOSTYL I CHTO
+
+let picIndex = 0; //this variable indicates current slide index
+
+const btnNext1 = document.querySelector('.next1')
+const btnPrev1 = document.querySelector('.prev1')
+let pics = document.getElementsByClassName("eventSlides");
+
+pics[picIndex].style.display = 'block' //display before click
+
+btnNext1.addEventListener('click', f => {  //next button
+    for (i = 0; i < pics.length; i++) { 
+    pics[i].style.display = "none";
+    } // hide all slides
+
+    picIndex++ 
+
+    if(picIndex < pics.length) {
+    pics[picIndex].style.display = 'block'
+    } else {
+    picIndex=0
+    pics[picIndex].style.display = 'block'
+    }
+})
+
+btnPrev1.addEventListener('click', b => {  //previous button
+    for (i = 0; i < pics.length; i++) {
+    pics[i].style.display = "none";
+    } // hide all slides
+
+    if(picIndex == 0) {
+    picIndex = (pics.length)-1
+    pics[picIndex].style.display = 'block'
+    } else {
+    picIndex--  
+    pics[picIndex].style.display = 'block'
+    }
+})
